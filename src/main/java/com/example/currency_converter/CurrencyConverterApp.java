@@ -45,8 +45,8 @@ public class CurrencyConverterApp extends Application {
         ComboBox<String> toCurrencyComboBox = createCurrencyComboBox();
 
         // Add ComboBoxes to the gridPane
-        gridPane.add(fromCurrencyComboBox, 3, 2);
-        gridPane.add(toCurrencyComboBox, 3, 3);
+        gridPane.add(fromCurrencyComboBox, 1, 2);
+        gridPane.add(toCurrencyComboBox, 1, 3);
 
         // Set action for the convertButton
         convertButton.setOnAction(e -> {
@@ -66,7 +66,7 @@ public class CurrencyConverterApp extends Application {
             }
         });
 
-        Scene scene = new Scene(gridPane, 400, 300);
+        Scene scene = new Scene(gridPane, 300, 250);
         primaryStage.setScene(scene);
 
         primaryStage.show();
